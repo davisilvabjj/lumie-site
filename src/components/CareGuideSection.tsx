@@ -10,9 +10,9 @@ const CareGuideSection = () => {
 
   const goldCare = [
     "Armazene separadamente em estojo",
-    "Evite produtos químicos e cloro",
-    "Limpe com água morna e sabão neutro",
-    "Seque completamente antes de guardar"
+    "Evite contato com água e perfumes",
+    "Limpe com pano macio e seco",
+    "Guarde em saquinhos individuais"
   ];
 
   return (
@@ -56,21 +56,21 @@ const CareGuideSection = () => {
             </ul>
           </div>
 
-          {/* Ouro 18k */}
+          {/* Folheado a Ouro */}
           <div className="bg-white rounded-3xl shadow-soft hover:shadow-elegant transition-elegant p-8 hover-lift">
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-lumie-coral rounded-full flex items-center justify-center mr-4">
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-bold text-primary">Ouro 18k</h3>
-                <p className="font-sans text-muted-foreground">75% ouro puro</p>
+                <h3 className="font-serif text-2xl font-bold text-primary">Folheado a Ouro</h3>
+                <p className="font-sans text-muted-foreground">Banho de ouro sobre metal nobre</p>
               </div>
             </div>
             
             <p className="font-sans text-foreground/80 mb-6 leading-relaxed">
-              O ouro 18k possui 75% de ouro puro em sua composição, oferecendo a combinação perfeita 
-              entre beleza, durabilidade e resistência ao desgaste diário.
+              Peças folheadas a ouro possuem uma camada de ouro aplicada sobre metal nobre, 
+              oferecendo beleza e durabilidade com excelente custo-benefício.
             </p>
             
             <h4 className="font-serif text-lg font-bold text-primary mb-4">Cuidados Essenciais:</h4>
@@ -103,7 +103,7 @@ const CareGuideSection = () => {
                 <span className="text-2xl">✨</span>
               </div>
               <p className="font-sans text-foreground/80">
-                O ouro é um dos metais mais duráveis do mundo, sendo praticamente indestrutível e imune à oxidação
+                Peças folheadas a ouro mantêm sua beleza por muito tempo quando cuidadas adequadamente
               </p>
             </div>
             

@@ -9,25 +9,57 @@ const collections = [
     id: 1,
     title: "Anéis",
     image: ringsImage,
-    description: "Peças únicas que expressam sua personalidade"
+    description: "Peças únicas que expressam sua personalidade",
+    category: "aneis"
   },
   {
     id: 2,
     title: "Colares",
     image: necklacesImage,
-    description: "Elegância que realça sua beleza natural"
+    description: "Elegância que realça sua beleza natural",
+    category: "colares"
   },
   {
     id: 3,
     title: "Brincos",
     image: earringsImage,
-    description: "Detalhes que fazem toda a diferença"
+    description: "Detalhes que fazem toda a diferença",
+    category: "brincos"
   },
   {
     id: 4,
     title: "Alianças",
     image: alliancesImage,
-    description: "Símbolos eternos do amor verdadeiro"
+    description: "Símbolos eternos do amor verdadeiro",
+    category: "aliancas"
+  },
+  {
+    id: 5,
+    title: "Berloques",
+    image: ringsImage, // Reutilizando imagem temporariamente
+    description: "Pequenos detalhes, grandes significados",
+    category: "berloques"
+  },
+  {
+    id: 6,
+    title: "Pulseiras",
+    image: necklacesImage, // Reutilizando imagem temporariamente
+    description: "Complementos perfeitos para seus looks",
+    category: "pulseiras"
+  },
+  {
+    id: 7,
+    title: "Pingentes",
+    image: earringsImage, // Reutilizando imagem temporariamente
+    description: "Símbolos carregados de significado",
+    category: "pingentes"
+  },
+  {
+    id: 8,
+    title: "Piercings",
+    image: alliancesImage, // Reutilizando imagem temporariamente
+    description: "Modernidade e estilo em cada peça",
+    category: "piercings"
   }
 ];
 
@@ -40,7 +72,7 @@ const CollectionsSection = () => {
             Coleções em Destaque
           </h2>
           <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada peça é cuidadosamente criada para expressar sua individualidade e realçar sua beleza única
+            Cada peça é cuidadosamente selecionada para expressar sua individualidade e realçar sua beleza única
           </p>
         </div>
         
@@ -62,7 +94,12 @@ const CollectionsSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-elegant">
                   <h3 className="font-serif text-2xl font-bold mb-2">{collection.title}</h3>
                   <p className="font-sans text-sm opacity-90 mb-4">{collection.description}</p>
-                  <LumieButton variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-primary">
+                  <LumieButton 
+                    variant="outline" 
+                    size="sm" 
+                    className="border-white text-white hover:bg-white hover:text-primary"
+                    onClick={() => window.location.href = `/products?category=${collection.category}`}
+                  >
                     Ver Mais
                   </LumieButton>
                 </div>

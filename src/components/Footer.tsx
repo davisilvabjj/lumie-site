@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="font-serif text-3xl font-bold mb-4">LUMIÊ</h3>
             <p className="font-sans text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
-              Joias que iluminam sua essência. Design autoral, qualidade premium em prata 925 e ouro 18k. 
-              Cada peça é criada para expressar sua individualidade única.
+              Joias que iluminam sua essência. Qualidade premium em prata 925 e peças folheadas a ouro. 
+              Cada peça é selecionada para expressar sua individualidade única.
             </p>
             <div className="flex space-x-4">
               <a

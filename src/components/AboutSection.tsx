@@ -14,7 +14,7 @@ const AboutSection = () => {
             </p>
             <p>
               Trabalhamos exclusivamente com <span className="text-lumie-coral font-medium">prata 925</span> e 
-              <span className="text-lumie-coral font-medium"> ouro 18k</span>, garantindo durabilidade, 
+              <span className="text-lumie-coral font-medium"> peças folheadas e banhadas a ouro</span>, garantindo durabilidade, 
               brilho e resistência que acompanham você em todos os momentos especiais da vida.
             </p>
             <p className="text-xl font-medium text-primary">
@@ -36,7 +36,7 @@ const AboutSection = () => {
                 <span className="text-2xl">💎</span>
               </div>
               <h3 className="font-serif text-xl font-bold text-primary mb-2">Qualidade Premium</h3>
-              <p className="font-sans text-muted-foreground">Prata 925 e Ouro 18k certificados</p>
+              <p className="font-sans text-muted-foreground">Prata 925 e folheados a ouro certificados</p>
             </div>
             
             <div className="p-6 rounded-xl shadow-soft hover:shadow-elegant transition-elegant hover-lift">

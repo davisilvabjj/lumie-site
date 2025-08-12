@@ -9,10 +9,10 @@
 @layer base {
   :root {
     /* LUMIÊ Brand Colors - All HSL */
-    --lumie-blue-soft: 218 45% 65%; /* #7BA1D5 - Azul suave */
+    --lumie-blue-soft: 218 65% 75%; /* Azul mais delicado */
     --lumie-gold-light: 45 100% 87%; /* #FFEDBF - Dourado claro */
     --lumie-blue-petrol: 190 96% 32%; /* #0396A6 - Azul petróleo */
-    --lumie-coral: 6 80% 74%; /* #F28A80 - Rosa coral */
+    --lumie-coral: 6 80% 65%; /* #FF7E70 - Rosa salmão mais forte */
     --lumie-aqua: 180 95% 33%; /* #03A6A6 - Verde-água */
     
     /* Base System Colors */
