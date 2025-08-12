@@ -1,9 +1,9 @@
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { LumieButton } from "@/components/ui/lumie-button";
-import { Heart, Share2, ShoppingBag } from "lucide-react";
+import { Heart, Share2, ShoppingBag, ArrowLeft } from "lucide-react";
 
 const productsByCategory = {
   aneis: [
@@ -50,8 +50,16 @@ const productsByCategory = {
 
 const Products = () => {
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
   const category = searchParams.get('category') || 'aneis';
   const products = productsByCategory[category as keyof typeof productsByCategory] || [];
+
+  const handleWhatsAppPurchase = (productName: string) => {
+    const phoneNumber = "5585999887766";
+    const message = `Olá, tenho interesse no produto ${productName} da Lume Joias. Poderia me enviar mais informações?`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 
   const categoryNames = {
     aneis: 'Anéis',
@@ -71,11 +79,23 @@ const Products = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-muted/30 to-secondary/10">
         <div className="container mx-auto px-6">
+          {/* Back Button */}
+          <div className="mb-8">
+            <LumieButton 
+              variant="outline" 
+              onClick={() => navigate('/')}
+              className="group hover:scale-105 transition-transform"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+              Voltar ao Início
+            </LumieButton>
+          </div>
+          
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 sm:mb-6">
               {categoryNames[category as keyof typeof categoryNames]}
             </h1>
-            <p className="font-sans text-xl text-muted-foreground leading-relaxed">
+            <p className="font-sans text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed px-4">
               Descubra nossa coleção de {categoryNames[category as keyof typeof categoryNames].toLowerCase()} 
               em prata 925 e folheados a ouro. Qualidade e elegância em cada peça.
             </p>
@@ -84,9 +104,9 @@ const Products = () => {
       </section>
 
       {/* Products Grid */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {products.map((product, index) => (
               <div 
                 key={product.id}
@@ -101,30 +121,35 @@ const Products = () => {
                       className="w-full h-full object-cover transition-elegant group-hover:scale-110"
                       loading="lazy"
                     />
-                    <div className="absolute top-4 right-4 space-y-2">
-                      <button className="w-10 h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-background transition-smooth">
-                        <Heart className="w-5 h-5 text-muted-foreground hover:text-accent" />
+                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4 space-y-2">
+                      <button className="w-8 h-8 sm:w-10 sm:h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-background transition-smooth">
+                        <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground hover:text-accent" />
                       </button>
-                      <button className="w-10 h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-background transition-smooth">
-                        <Share2 className="w-5 h-5 text-muted-foreground hover:text-primary" />
+                      <button className="w-8 h-8 sm:w-10 sm:h-10 bg-background/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-background transition-smooth">
+                        <Share2 className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground hover:text-primary" />
                       </button>
                     </div>
                   </div>
                   
-                  <div className="p-6">
-                    <h3 className="font-serif text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-smooth">
+                  <div className="p-4 sm:p-6">
+                    <h3 className="font-serif text-base sm:text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-smooth line-clamp-2">
                       {product.name}
                     </h3>
                     
-                    <p className="font-sans text-muted-foreground text-sm mb-4">
+                    <p className="font-sans text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 line-clamp-2">
                       {product.description}
                     </p>
                     
-                    <div className="flex items-center justify-between">
-                      <span className="font-sans text-xl font-bold text-primary">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
+                      <span className="font-sans text-lg sm:text-xl font-bold text-primary">
                         {product.price}
                       </span>
-                      <LumieButton variant="hero" size="sm">
+                      <LumieButton 
+                        variant="hero" 
+                        size="sm"
+                        onClick={() => handleWhatsAppPurchase(product.name)}
+                        className="w-full sm:w-auto"
+                      >
                         <ShoppingBag className="w-4 h-4 mr-2" />
                         Comprar
                       </LumieButton>
