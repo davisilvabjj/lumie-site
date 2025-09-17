@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail, MapPin, Clock } from "lucide-react";
+import lumieLogoL from "@/assets/lumie-logo-l.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
-            <h3 className="font-serif text-3xl font-bold mb-4">LUMIÊ</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={lumieLogoL} 
+                alt="Lumiê" 
+                className="h-8 w-auto"
+              />
+              <h3 className="font-serif text-3xl font-bold">LUMIÊ</h3>
+            </div>
             <p className="font-sans text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
               Joias que iluminam sua essência. Qualidade premium em prata 925 e peças folheadas a ouro. 
               Cada peça é selecionada para expressar sua individualidade única.
@@ -46,23 +54,33 @@ const Footer = () => {
             <h4 className="font-serif text-xl font-bold mb-6">Nossas Coleções</h4>
             <ul className="space-y-3 font-sans">
               <li>
-                <a href="#aneis" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <a href="/products?category=aneis" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Anéis
                 </a>
               </li>
               <li>
-                <a href="#colares" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <a href="/products?category=colares" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Colares
                 </a>
               </li>
               <li>
-                <a href="#brincos" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <a href="/products?category=brincos" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Brincos
                 </a>
               </li>
               <li>
-                <a href="#aliancas" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                <a href="/products?category=aliancas" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Alianças
+                </a>
+              </li>
+              <li>
+                <a href="/products?category=berloques" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                  Berloques
+                </a>
+              </li>
+              <li>
+                <a href="/products?category=pulseiras" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
+                  Pulseiras
                 </a>
               </li>
             </ul>

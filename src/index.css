@@ -8,12 +8,12 @@
 
 @layer base {
   :root {
-    /* LUMIÊ Brand Colors - All HSL */
-    --lumie-blue-soft: 218 65% 75%; /* Azul mais delicado */
-    --lumie-gold-light: 45 100% 87%; /* #FFEDBF - Dourado claro */
-    --lumie-blue-petrol: 190 96% 32%; /* #0396A6 - Azul petróleo */
-    --lumie-coral: 6 80% 65%; /* #FF7E70 - Rosa salmão mais forte */
-    --lumie-aqua: 180 95% 33%; /* #03A6A6 - Verde-água */
+    /* LUMIÊ Brand Colors - Nova Paleta Oficial */
+    --lumie-rose-pale: 20 100% 93%; /* #FFE2D8 - Rosa pálido */
+    --lumie-rose-salmon: 20 100% 81%; /* #FFB69D - Rosa salmão */
+    --lumie-coral: 6 93% 65%; /* #F86251 - Coral vibrante */
+    --lumie-blue-petrol: 206 44% 42%; /* #3D7399 - Azul petróleo */
+    --lumie-blue-light: 224 100% 93%; /* #DEE9FF - Azul claro */
     
     /* Base System Colors */
     --background: 0 0% 100%;
@@ -26,20 +26,20 @@
     --popover-foreground: 218 20% 20%;
     
     /* Primary using LUMIÊ blue petrol */
-    --primary: 190 96% 32%;
+    --primary: 206 44% 42%;
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary using LUMIÊ blue soft */
-    --secondary: 218 45% 65%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary using LUMIÊ blue light */
+    --secondary: 224 100% 93%;
+    --secondary-foreground: 206 44% 42%;
     
     /* Accent using LUMIÊ coral */
-    --accent: 6 80% 74%;
+    --accent: 6 93% 65%;
     --accent-foreground: 0 0% 100%;
     
-    /* Muted using soft gold */
-    --muted: 45 100% 95%;
-    --muted-foreground: 218 20% 45%;
+    /* Muted using rose pale */
+    --muted: 20 100% 93%;
+    --muted-foreground: 206 44% 42%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -51,14 +51,15 @@
     --radius: 0.75rem;
     
     /* LUMIÊ Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--lumie-blue-soft)) 0%, hsl(var(--lumie-gold-light)) 100%);
-    --gradient-elegant: linear-gradient(180deg, hsl(var(--lumie-gold-light)) 0%, hsl(var(--lumie-blue-soft)) 100%);
-    --gradient-ocean: linear-gradient(45deg, hsl(var(--lumie-blue-petrol)) 0%, hsl(var(--lumie-aqua)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--lumie-blue-light)) 0%, hsl(var(--lumie-rose-pale)) 100%);
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--lumie-rose-pale)) 0%, hsl(var(--lumie-rose-salmon)) 100%);
+    --gradient-ocean: linear-gradient(45deg, hsl(var(--lumie-blue-petrol)) 0%, hsl(var(--lumie-blue-light)) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(var(--lumie-coral)) 0%, hsl(var(--lumie-rose-salmon)) 100%);
     
     /* LUMIÊ Shadows */
-    --shadow-soft: 0 4px 20px hsl(var(--lumie-blue-soft) / 0.15);
-    --shadow-elegant: 0 8px 30px hsl(var(--lumie-blue-petrol) / 0.2);
-    --shadow-glow: 0 0 40px hsl(var(--lumie-gold-light) / 0.6);
+    --shadow-soft: 0 4px 20px hsl(var(--lumie-blue-light) / 0.2);
+    --shadow-elegant: 0 8px 30px hsl(var(--lumie-blue-petrol) / 0.25);
+    --shadow-glow: 0 0 40px hsl(var(--lumie-rose-salmon) / 0.4);
     
     /* Animation Variables */
     --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,27 +67,27 @@
   }
 
   .dark {
-    --background: 218 25% 10%;
-    --foreground: 45 100% 95%;
+    --background: 206 25% 8%;
+    --foreground: 20 100% 93%;
     
-    --card: 218 25% 12%;
-    --card-foreground: 45 100% 95%;
+    --card: 206 25% 10%;
+    --card-foreground: 20 100% 93%;
     
-    --primary: 190 96% 45%;
+    --primary: 206 44% 52%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 218 45% 25%;
-    --secondary-foreground: 45 100% 95%;
+    --secondary: 224 50% 20%;
+    --secondary-foreground: 20 100% 93%;
     
-    --accent: 6 80% 65%;
+    --accent: 6 93% 65%;
     --accent-foreground: 0 0% 100%;
     
-    --muted: 218 25% 15%;
-    --muted-foreground: 218 20% 70%;
+    --muted: 206 25% 12%;
+    --muted-foreground: 224 20% 70%;
     
-    --border: 218 25% 20%;
-    --input: 218 25% 20%;
-    --ring: 190 96% 45%;
+    --border: 206 25% 18%;
+    --input: 206 25% 18%;
+    --ring: 206 44% 52%;
   }
 }
 
@@ -113,6 +114,10 @@
   
   .gradient-ocean {
     background: var(--gradient-ocean);
+  }
+  
+  .gradient-coral {
+    background: var(--gradient-coral);
   }
   
   .shadow-soft {
@@ -156,7 +161,7 @@
       90deg,
       hsl(var(--lumie-blue-petrol)),
       hsl(var(--lumie-coral)),
-      hsl(var(--lumie-aqua)),
+      hsl(var(--lumie-rose-salmon)),
       hsl(var(--lumie-blue-petrol))
     );
     background-size: 400% 100%;
