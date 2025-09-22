@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Mail, MapPin, Clock } from "lucide-react";
-import lumieLogoSecondary from "../assets/brand/logo-secondary.svg";
-import code72logo from "../assets/brand/code-logo.svg";
+import lumieLogoSecondary from "/assets/brand/logo-secondary.svg";
+import code72logo from "/assets/brand/code-logo.svg";
 
 const Footer = () => {
   return (

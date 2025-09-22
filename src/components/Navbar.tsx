@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { LumieButton } from "@/components/ui/lumie-button";
 import { Link, useLocation } from "react-router-dom";
-import lumieLogo from "../assets/brand/logo-primary.svg";
+import lumieLogo from "/assets/brand/logo-primary.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import { LumieButton } from "@/components/ui/lumie-button";
-import heroImage from "@/assets/others/hero-jewelry.jpg";
-import logo from "../assets/brand/logotype.svg";
+import heroImage from "/assets/others/hero-jewelry.jpg";
+import logo from "/assets/brand/logotype.svg";
 
 const HeroSection = () => {
   const scrollToCollections = () => {

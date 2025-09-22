@@ -1,8 +1,8 @@
 import { Instagram, ExternalLink, Heart } from "lucide-react";
-import ringsCollection from "../assets/products/rings-collection.jpg";
-import pulseirasCollection from "../assets/products/pulseiras-collection.jpg";
-import earringsCollection from "../assets/products/earrings-collection.jpg";
-import necklacesCollection from "../assets/products/necklaces-collection.jpg";
+import ringsCollection from "/assets/products/rings-collection.jpg";
+import pulseirasCollection from "/assets/products/pulseiras-collection.jpg";
+import earringsCollection from "/assets/products/earrings-collection.jpg";
+import necklacesCollection from "/assets/products/necklaces-collection.jpg";
 import "../css/my-css.css";
 
 const instagramPosts = [

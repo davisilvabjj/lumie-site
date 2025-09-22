@@ -2,56 +2,56 @@
   {
     "id": 1,
     "title": "Anéis",
-    "image": "/src/assets/products/rings-collection.jpg",
+    "image": "assets/products/rings-collection.jpg",
     "description": "Peças únicas que expressam sua personalidade",
     "category": "aneis"
   },
   {
     "id": 2,
     "title": "Colares",
-    "image": "/src/assets/products/necklaces-collection.jpg",
+    "image": "assets/products/necklaces-collection.jpg",
     "description": "Elegância que realça sua beleza natural",
     "category": "colares"
   },
   {
     "id": 3,
     "title": "Brincos",
-    "image": "/src/assets/products/earrings-collection.jpg",
+    "image": "assets/products/earrings-collection.jpg",
     "description": "Detalhes que fazem toda a diferença",
     "category": "brincos"
   },
   {
     "id": 4,
     "title": "Alianças",
-    "image": "/src/assets/products/alliances-collection.jpg",
+    "image": "assets/products/alliances-collection.jpg",
     "description": "Símbolos eternos do amor verdadeiro",
     "category": "aliancas"
   },
   {
     "id": 5,
     "title": "Berloques",
-    "image": "/src/assets/products/berloques-collection.jpg",
+    "image": "assets/products/berloques-collection.jpg",
     "description": "Pequenos detalhes, grandes significados",
     "category": "berloques"
   },
   {
     "id": 6,
     "title": "Pulseiras",
-    "image": "/src/assets/products/pulseiras-collection.jpg",
+    "image": "assets/products/pulseiras-collection.jpg",
     "description": "Complementos perfeitos para seus looks",
     "category": "pulseiras"
   },
   {
     "id": 7,
     "title": "Pingentes",
-    "image": "/src/assets/products/pingentes-collection.jpg",
+    "image": "assets/products/pingentes-collection.jpg",
     "description": "Símbolos carregados de significado",
     "category": "pingentes"
   },
   {
     "id": 8,
     "title": "Piercings",
-    "image": "/src/assets/products/piercings-collection.jpg",
+    "image": "assets/products/piercings-collection.jpg",
     "description": "Modernidade e estilo em cada peça",
     "category": "piercings"
   }
