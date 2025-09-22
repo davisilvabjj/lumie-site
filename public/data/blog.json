@@ -5,7 +5,7 @@
     "excerpt": "Dicas essenciais para manter suas joias de prata sempre brilhantes e conservadas.",
     "date": "2025-09-20",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post1.jpg",
+    "image": "/src/assets/blog/blog-post1.jpg",
     "category": "Cuidados"
   },
   {
@@ -14,7 +14,7 @@
     "excerpt": "Descubra as principais tendências em joias folheadas a ouro para este ano.",
     "date": "2025-09-15",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post2.jpg",
+    "image": "/src/assets/blog/blog-post2.jpg",
     "category": "Tendências"
   },
   {
@@ -23,7 +23,7 @@
     "excerpt": "Como os berloques podem contar sua história pessoal através de joias únicas.",
     "date": "2025-09-10",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post3.jpg",
+    "image": "/src/assets/blog/blog-post3.jpg",
     "category": "Personalização"
   },
   {
@@ -32,7 +32,7 @@
     "excerpt": "Aprenda a combinar diferentes pulseiras para criar looks incríveis.",
     "date": "2025-09-05",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post4.jpg",
+    "image": "/src/assets/blog/blog-post4.jpg",
     "category": "Estilo"
   },
   {
@@ -41,7 +41,7 @@
     "excerpt": "Tudo sobre piercings: desde os cuidados necessários até as últimas tendências.",
     "date": "2025-08-31",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post5.jpg",
+    "image": "/src/assets/blog/blog-post5.jpg",
     "category": "Piercings"
   },
   {
@@ -50,7 +50,7 @@
     "excerpt": "Descubra o simbolismo por trás dos diferentes tipos de pingentes.",
     "date": "2025-07-25",
     "author": "LUMIÊ Team",
-    "image": "../src/assets/blog/blog-post6.jpg",
+    "image": "/src/assets/blog/blog-post6.jpg",
     "category": "Significados"
   }
 ]
