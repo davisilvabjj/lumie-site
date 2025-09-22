@@ -1,0 +1,60 @@
+{
+  "aneis": [
+    {"id": 1, "name": "Anel Solitário Delicado", "description": "Anel em prata 925 com banho de ouro.", "price": "R$ 89,90", "image": "../src/assets/products/rings-collection.jpg"},
+    {"id": 2, "name": "Anel Infinity", "description": "Anel símbolo do infinito em prata.",
+    "price": "R$ 69,90", "image": "../src/assets/products/rings-collection.jpg"},
+    {"id": 3, "name": "Anel Trio Minimalista", "description": "Conjunto de 3 anéis delicados.",
+    "price": "R$ 129,90", "image": "../src/assets/products/rings-collection.jpg"}
+  ],
+  "colares": [
+    {"id": 4, "name": "Colar Coração Vazado", "description": "Colar em prata 925 com pingente coração.", "price": "R$ 119,90", "image": "../src/assets/products/necklaces-collection.jpg"},
+    {"id": 5, "name": "Colar Camadas", "description": "Colar duplo em camadas douradas", "price": "R$ 89,90", "image": "../src/assets/products/necklaces-collection.jpg"},
+    {"id": 6, "name": "Colar Lua e Estrelas", "description": "Colar temático celestial.", "price": "R$ 99,90", "image": "../src/assets/products/necklaces-collection.jpg"}
+  ],
+  "brincos": [
+    {"id": 7, "name": "Brinco Argola Pequena", "description": "Argola clássica em prata 925.",
+    "price": "R$ 59,90", "image": "../src/assets/products/earrings-collection.jpg"},
+    {"id": 8,
+    "name": "Brinco Gota Cristal", "description": "Brinco formato gota com cristal.", "price": "R$ 79,90", "image": "../src/assets/products/earrings-collection.jpg"},
+    {"id": 9,
+    "name": "Brinco Borboleta", "description": "Brinco delicado formato borboleta.", "price": "R$ 69,90", "image": "../src/assets/products/earrings-collection.jpg"}
+  ],
+  "aliancas": [
+    {"id": 10, "name": "Aliança Clássica Lisa", "description": "Aliança lisa em prata 925.",
+    "price": "R$ 149,90", "image": "../src/assets/products/alliances-collection.jpg"},
+    {"id": 11, "name": "Aliança Texturizada", "description": "Aliança com textura especial.", "price": "R$ 169,90", "image": "../src/assets/products/alliances-collection.jpg"},
+    {"id": 12, "name": "Aliança Dupla", "description": "Par de alianças combinando.",
+    "price": "R$ 189,90", "image": "../src/assets/products/alliances-collection.jpg"}
+  ],
+  "berloques": [
+    {"id": 13, "name": "Berloque Coração", "description": "Berloque coração em prata.",
+    "price": "R$ 39,90", "image": "../src/assets/products/berloques-collection.jpg"},
+    {"id": 14, "name": "Berloque Trevo", "description": "Berloque da sorte trevo.", "price": "R$ 34,90", "image": "../src/assets/products/berloques-collection.jpg"},
+    {"id": 15, "name": "Berloque Letra", "description": "Berloque com inicial personalizada.",
+    "price": "R$ 29,90", "image": "../src/assets/products/berloques-collection.jpg"}
+  ],
+  "pulseiras": [
+    {"id": 16, "name": "Pulseira Corrente", "description": "Pulseira corrente delicada.",
+    "price": "R$ 79,90", "image": "../src/assets/products/pulseiras-collection.jpg"},
+    {"id": 17, "name": "Pulseira Rígida", "description": "Bracelete rígido dourado.",
+    "price": "R$ 99,90", "image": "../src/assets/products/pulseiras-collection.jpg"},
+    {"id": 18, "name": "Pulseira Berloques", "description": "Pulseira com berloques inclusos.",
+    "price": "R$ 119,90", "image": "../src/assets/products/pulseiras-collection.jpg"}
+  ],
+  "pingentes": [
+    {"id": 19, "name": "Pingente Mandala", "description": "Pingente mandala em prata.",
+    "price": "R$ 69,90", "image": "../src/assets/products/pingentes-collection.jpg"},
+    {"id": 20, "name": "Pingente Árvore da Vida", "description": "Pingente árvore da vida.",
+    "price": "R$ 79,90", "image": "../src/assets/products/pingentes-collection.jpg"},
+    {"id": 21, "name": "Pingente Cruz", "description": "Pingente cruz delicada.",
+    "price": "R$ 59,90", "image": "../src/assets/products/pingentes-collection.jpg"}
+  ],
+  "piercings": [
+    {"id": 22, "name": "Piercing Helix", "description": "Piercing para helix em prata.",
+    "price": "R$ 49,90", "image": "../src/assets/products/piercings-collection.jpg"},
+    {"id": 23, "name": "Piercing Tragus", "description": "Piercing para tragus dourado.",
+    "price": "R$ 54,90", "image": "../src/assets/products/piercings-collection.jpg"},
+    {"id": 24, "name": "Piercing Nostril", "description": "Piercing para nariz delicado.",
+    "price": "R$ 39,90", "image": "../src/assets/products/piercings-collection.jpg"}
+  ]
+}

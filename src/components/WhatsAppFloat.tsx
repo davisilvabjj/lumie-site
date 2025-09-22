@@ -1,8 +1,8 @@
-import { MessageCircle } from "lucide-react";
+import whatsappIcon from '../assets/others/whats.svg';
 
 const WhatsAppFloat = () => {
-  const phoneNumber = "5585999887766";
-  const message = "Olá! Gostaria de saber mais sobre as joias Lumié";
+  const phoneNumber = "5588996404002";
+  const message = "Olá! Gostaria de saber mais sobre as joias Lumiê!";
   
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -15,7 +15,7 @@ const WhatsAppFloat = () => {
       className="whatsapp-float animate-float"
       aria-label="Entrar em contato via WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 text-white" />
+      <img src={whatsappIcon} alt="" />
     </button>
   );
 };

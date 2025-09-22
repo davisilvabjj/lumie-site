@@ -8,11 +8,11 @@ const lumieButtonVariants = cva(
   {
     variants: {
       variant: {
-        hero: "bg-primary text-primary-foreground shadow-elegant hover:bg-primary/90 hover:-translate-y-1 hover:shadow-glow",
+        hero: "bg-primary text-primary-foreground shadow-sm hover:bg-primary/90 hover:-translate-y-1 hover:shadow-md",
         ocean: "gradient-ocean text-white shadow-soft hover:shadow-elegant hover:scale-105",
         coral: "bg-lumie-coral text-white shadow-soft hover:bg-lumie-coral/90 hover:-translate-y-1",
         elegant: "gradient-elegant text-primary shadow-soft hover:shadow-elegant hover:scale-105",
-        outline: "border border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground shadow-soft",
+        outline: "border border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground hover:shadow-soft", 
         ghost: "text-primary hover:bg-muted hover:text-primary transition-smooth",
         link: "text-primary underline-offset-4 hover:underline transition-smooth"
       },

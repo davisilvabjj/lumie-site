@@ -1,80 +1,43 @@
+import { useEffect, useState } from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { LumieButton } from "@/components/ui/lumie-button";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "Como Cuidar da Sua Prata 925",
-    excerpt: "Dicas essenciais para manter suas joias de prata sempre brilhantes e conservadas.",
-    date: "2024-01-15",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Cuidados"
-  },
-  {
-    id: 2,
-    title: "Tendências em Joias Folheadas 2024",
-    excerpt: "Descubra as principais tendências em joias folheadas a ouro para este ano.",
-    date: "2024-01-10",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Tendências"
-  },
-  {
-    id: 3,
-    title: "A Arte dos Berloques Personalizados",
-    excerpt: "Como os berloques podem contar sua história pessoal através de joias únicas.",
-    date: "2024-01-05",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Personalização"
-  },
-  {
-    id: 4,
-    title: "Combinando Pulseiras: Guia de Estilo",
-    excerpt: "Aprenda a combinar diferentes pulseiras para criar looks incríveis.",
-    date: "2023-12-28",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Estilo"
-  },
-  {
-    id: 5,
-    title: "Piercings: Cuidados e Tendências",
-    excerpt: "Tudo sobre piercings: desde os cuidados necessários até as últimas tendências.",
-    date: "2023-12-20",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Piercings"
-  },
-  {
-    id: 6,
-    title: "Pingentes com Significado",
-    excerpt: "Descubra o simbolismo por trás dos diferentes tipos de pingentes.",
-    date: "2023-12-15",
-    author: "LUMIÊ Team",
-    image: "/placeholder.svg",
-    category: "Significados"
-  }
-];
+type BlogPost = {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  image: string;
+  category: string;
+}
 
 const Blog = () => {
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+
+  useEffect(() => {
+    fetch("/data/blog.json")
+    .then((res) => res.json())
+    .then((data) => setBlogPosts(data))
+    .catch((err) => console.error("Erro ao carregar JSON:", err));
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-muted/30 to-secondary/10">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-muted/30 to-secondary/10">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+            <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6">
               Blog LUMIÊ
             </h1>
-            <p className="font-sans text-xl text-muted-foreground leading-relaxed">
-              Descobra dicas, tendências e segredos do mundo das joias. 
+            <p className="font-sans text-xl text-gray-500 leading-relaxed">
+              Descubra dicas, tendências e segredos do mundo das joias. 
               Seu guia completo para escolher e cuidar das suas peças favoritas.
             </p>
           </div>
@@ -82,13 +45,13 @@ const Blog = () => {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-20">
+      <section className="pb-20">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <article 
                 key={post.id}
-                className="group cursor-pointer animate-slide-up hover-lift"
+                className="group cursor-pointer animate-slide-up hover-lift border rounded-2xl"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="bg-card rounded-2xl overflow-hidden shadow-soft group-hover:shadow-elegant transition-elegant">
@@ -122,7 +85,7 @@ const Blog = () => {
                       {post.title}
                     </h3>
                     
-                    <p className="font-sans text-muted-foreground text-sm leading-relaxed mb-4">
+                    <p className="font-sans text-gray-500 text-sm leading-relaxed mb-4">
                       {post.excerpt}
                     </p>
                     
