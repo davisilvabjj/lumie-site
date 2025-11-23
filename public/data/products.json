@@ -1,23 +1,79 @@
 {
   "aneis": [
-    {"id": 1, "name": "Anel Solitário Delicado", "description": "Anel em prata 925 com banho de ouro.", "price": "R$ 89,90", "image": "/assets/products/rings-collection.jpg"},
-    {"id": 2, "name": "Anel Infinity", "description": "Anel símbolo do infinito em prata.",
-    "price": "R$ 69,90", "image": "/assets/products/rings-collection.jpg"},
-    {"id": 3, "name": "Anel Trio Minimalista", "description": "Conjunto de 3 anéis delicados.",
-    "price": "R$ 129,90", "image": "/assets/products/rings-collection.jpg"}
+    {
+      "id": 1, 
+      "name": "Anel Solitário Delicado", 
+      "description": "Anel em prata 925 com banho de ouro.", 
+      "price": "R$ 89,90", 
+      "image": "/assets/products/rings-collection.jpg"
+    },
+    {
+      "id": 2, 
+      "name": "Anel Infinity", 
+      "description": "Anel símbolo do infinito em prata.",
+      "price": "R$ 69,90", 
+      "image": "/assets/products/rings-collection.jpg"
+    },
+    {
+      "id": 3, 
+      "name": "Anel Trio Minimalista", 
+      "description": "Conjunto de 3 anéis delicados.",
+      "price": "R$ 129,90", 
+      "image": "/assets/products/rings-collection.jpg"
+    }
   ],
   "colares": [
-    {"id": 4, "name": "Colar Coração Vazado", "description": "Colar em prata 925 com pingente coração.", "price": "R$ 119,90", "image": "/assets/products/necklaces-collection.jpg"},
-    {"id": 5, "name": "Colar Camadas", "description": "Colar duplo em camadas douradas", "price": "R$ 89,90", "image": "/assets/products/necklaces-collection.jpg"},
-    {"id": 6, "name": "Colar Lua e Estrelas", "description": "Colar temático celestial.", "price": "R$ 99,90", "image": "/assets/products/necklaces-collection.jpg"}
+    {
+      "id": 4, 
+      "name": "Colar Coração Vazado", 
+      "description": "Colar em prata 925 com pingente coração.", 
+      "price": "R$ 119,90", 
+      "image": "/assets/products/necklaces-collection.jpg"
+    },
+    {
+      "id": 5, 
+      "name": "Colar Camadas", 
+      "description": "Colar duplo em camadas douradas", 
+      "price": "R$ 89,90", 
+      "image": "/assets/products/necklaces-collection.jpg"
+    },
+    {
+      "id": 6, 
+      "name": "Colar Lua e Estrelas", 
+      "description": "Colar temático celestial.", 
+      "price": "R$ 99,90", 
+      "image": "/assets/products/necklaces-collection.jpg"
+    }
   ],
   "brincos": [
-    {"id": 7, "name": "Brinco Argola Pequena", "description": "Argola clássica em prata 925.",
-    "price": "R$ 59,90", "image": "/assets/products/earrings-collection.jpg"},
-    {"id": 8,
-    "name": "Brinco Gota Cristal", "description": "Brinco formato gota com cristal.", "price": "R$ 79,90", "image": "/assets/products/earrings-collection.jpg"},
-    {"id": 9,
-    "name": "Brinco Borboleta", "description": "Brinco delicado formato borboleta.", "price": "R$ 69,90", "image": "/assets/products/earrings-collection.jpg"}
+    {
+      "id": 7, 
+      "name": "Brinco Argola Pequena", 
+      "description": "Argola clássica em prata 925.",
+      "price": "R$ 59,90", 
+      "image": "/assets/products/earrings-collection.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Brinco Gota Cristal", 
+      "description": "Brinco formato gota com cristal.", 
+      "price": "R$ 79,90", 
+      "image": "/assets/products/earrings-collection.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Brinco Borboleta", 
+      "description": "Brinco delicado formato borboleta.", 
+      "price": "R$ 89,90", 
+      "image": "/assets/products/earrings-collection.jpg"
+    },
+    {
+      "id": 100,
+      "name": "Brincos Dourados",
+      "description": "Brinco dourado importado.",
+      "price": "R$ 199,99",
+      "image": "/assets/products/brincos.jpg"
+    }
   ],
   "aliancas": [
     {"id": 10, "name": "Aliança Clássica Lisa", "description": "Aliança lisa em prata 925.",
